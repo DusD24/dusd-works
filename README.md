@@ -1,8 +1,8 @@
 # DusD Works
 
-The studio homepage for [DusD Works](https://dusd24.github.io/dusd-works/), featuring Cluckworks. Open `index.html` or use a local static server for preview. Use HTTP to preview the trailer with its caption track.
+The studio homepage for [DusD Works](https://dusd24.github.io/dusd-works/), featuring Cluckworks and the browser builds of IdleCombat and Dangolf. Open `index.html` or use a local static server for preview. Use HTTP to preview the trailer with its caption track.
 
-Game entries live in `index.html`. For future games, add another article below the Cluckworks feature. The included trailer is a web encode of the approved landscape v03 edit. The game’s play, Fire tablet instructions, APK, and privacy policy live on the existing Cluckworks site.
+Game entries live in `index.html`. Add prototypes to the In development section. The included trailer is a web encode of the approved landscape v03 edit. The game’s play, Fire tablet instructions, APK, and privacy policy live on the existing Cluckworks site.
 
 ## Publish after preview approval
 

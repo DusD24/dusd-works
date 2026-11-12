@@ -146,6 +146,22 @@ h2 { font-size: clamp(1.55rem, 3vw, 2.4rem); font-weight: 950; line-height: 1.13
 figcaption { padding: 1rem 1.1rem 1.2rem; }
 figcaption h3 { font-size: 1.15rem; font-weight: 950; line-height: 1.25; }
 figcaption p { margin-top: .35rem; color: var(--muted); font-weight: 650; }
+.in-development { border-top: 1px solid var(--line); }
+.development-inner { padding-block: clamp(2.5rem, 5vw, 4.1rem); }
+.development-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.35rem; }
+.development-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: start;
+  gap: .5rem;
+  padding: clamp(1.1rem, 2.3vw, 1.7rem);
+  border: 1px solid var(--line);
+  border-radius: .85rem;
+  background: #fffdf7;
+}
+.development-card h3 { font-size: clamp(1.25rem, 2.5vw, 1.6rem); font-weight: 950; line-height: 1.2; }
+.development-card p { max-width: 48ch; color: var(--muted); font-weight: 650; }
+.development-card a { display: inline-flex; align-items: center; gap: .4rem; min-height: 44px; font-weight: 900; }
 .studio { border-top: 1px solid var(--line); background: var(--cream); }
 .studio-inner { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: start; gap: .8rem 2rem; padding-block: clamp(2.5rem, 5vw, 4.1rem); }
 .studio p { max-width: 53ch; color: var(--muted); font-size: 1.12rem; font-weight: 700; }
@@ -163,7 +179,7 @@ figcaption p { margin-top: .35rem; color: var(--muted); font-weight: 650; }
 
 @media (max-width: 47.99rem) {
   .farm { max-width: 34rem; }
-  .farm-grid, .studio-inner { grid-template-columns: 1fr; }
+  .farm-grid, .development-grid, .studio-inner { grid-template-columns: 1fr; }
   .footer-inner { align-items: flex-start; flex-direction: column; }
 }
 
