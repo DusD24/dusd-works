@@ -171,6 +171,49 @@ figcaption p { margin-top: .35rem; color: var(--muted); font-weight: 650; }
 .site-footer h2 { margin-bottom: .2rem; font-size: 1rem; letter-spacing: normal; }
 .site-footer a:not(.wordmark) { display: inline-flex; align-items: center; min-height: 44px; }
 
+.store-note { margin-top: .95rem; color: var(--muted); font-size: .94rem; font-weight: 750; }
+.store-note a { display: inline-block; padding-block: .3rem; font-weight: 850; color: var(--ink); }
+
+.facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+.facts li { padding: .85rem 1.1rem; border: 1px dashed var(--line); border-radius: .85rem; color: var(--muted); font-weight: 750; }
+.facts strong { display: block; color: var(--ink); font: 400 2rem/1.05 "Lilita One", Nunito, sans-serif; }
+
+.get { border-top: 1px solid var(--line); background: var(--cream); }
+.get-inner { padding-block: clamp(2.5rem, 5vw, 4.1rem); }
+.get-intro { max-width: 58ch; margin-top: .6rem; color: var(--muted); font-size: 1.08rem; font-weight: 700; }
+.platform-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.35rem; }
+.platform-card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  justify-items: start;
+  gap: .5rem;
+  padding: clamp(1.1rem, 2.3vw, 1.5rem);
+  border: 1px solid var(--line);
+  border-radius: .85rem;
+  background: #fffdf7;
+}
+.platform-card h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); font-weight: 950; line-height: 1.2; }
+.platform-card p { color: var(--muted); font-weight: 650; }
+.platform-card a { display: inline-flex; align-items: center; gap: .4rem; min-height: 44px; font-weight: 900; }
+.status { padding: .15rem .6rem; border: 1.5px solid var(--ink); border-radius: 99rem; font-size: .8rem; font-weight: 900; }
+.status-live { background: #bfe6b0; }
+.status-beta { background: var(--yellow); }
+.status-dev { background: #e7dcf5; }
+
+.footer-links { display: flex; flex-wrap: wrap; gap: 0 1.5rem; }
+
+/* Policy and other text pages */
+.doc { padding-block: clamp(2.25rem, 5vw, 4rem) clamp(3rem, 6vw, 5rem); }
+.doc-inner { max-width: 44rem; }
+.doc .back { display: inline-flex; align-items: center; min-height: 44px; color: var(--muted); font-weight: 850; }
+.doc h1 { margin-top: .5rem; font-size: clamp(2.4rem, 6vw, 3.8rem); }
+.doc .updated { margin-top: .6rem; color: var(--muted); font-weight: 800; }
+.doc .lead { margin-top: 1.2rem; font-size: 1.15rem; font-weight: 700; }
+.doc section { margin-top: 1.25rem; padding: 1.1rem 1.25rem 1.2rem; border: 1px solid var(--line); border-radius: .85rem; background: #fffdf7; }
+.doc h2 { font-size: 1.3rem; letter-spacing: -.01em; }
+.doc section p { margin-top: .45rem; color: var(--muted); font-weight: 650; }
+.doc section p a { color: var(--ink); font-weight: 850; }
+
 @media (max-width: 52rem) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-copy, .trailer { width: min(100%, 40rem); }
@@ -179,7 +222,8 @@ figcaption p { margin-top: .35rem; color: var(--muted); font-weight: 650; }
 
 @media (max-width: 47.99rem) {
   .farm { max-width: 34rem; }
-  .farm-grid, .development-grid, .studio-inner { grid-template-columns: 1fr; }
+  .farm-grid, .development-grid, .platform-grid, .studio-inner { grid-template-columns: 1fr; }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .footer-inner { align-items: flex-start; flex-direction: column; }
 }
 
